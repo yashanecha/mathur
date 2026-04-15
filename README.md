@@ -49,8 +49,30 @@ Supports **English (2026)** and **Hindi (2026)** board exam patterns with comple
 ---
 
 ## 🚀 Installation & Setup
-
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/ai-answer-sheet-evaluator.git
 cd ai-answer-sheet-evaluator
+
+Create virtual environment
+python -m venv venv
+source venv/bin/activate    # Linux/Mac
+# venv\Scripts\activate     # Windows
+
+Install dependencies
+pip install -r requirements.txt
+
+Environment Variables (.env)
+AZURE_STORAGE_CONNECTION_STRING=your_azure_connection_string
+AZURE_CONTAINER_NAME=tulja2025
+
+Project Structure
+/
+├── main.py                     # Main FastAPI application
+├── Reports/                    # Generated reports (DOCX + TXT)
+├── models/                     # Downloaded GGUF models
+├── temp_ocr/                   # Temporary OCR files
+├── PDF_files/                  # Uploaded student PDFs + page images
+├── .env
+├── requirements.txt
+└── README.md
