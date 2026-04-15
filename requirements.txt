@@ -1,0 +1,21 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+PyMuPDF>=1.24.0
+pdf2image>=1.17.0
+python-docx>=1.1.0
+Pillow>=10.4.0
+pytesseract>=0.3.10
+opencv-python-headless>=4.8.0
+numpy>=1.26.0
+sentence-transformers>=3.0.0
+torch>=2.3.0
+llama-cpp-python>=0.3.0
+huggingface-hub>=0.24.0
+azure-storage-blob>=12.20.0
+python-dotenv>=1.0.0
+python-multipart>=0.0.9
+aiofiles>=23.0.0
+uvloop>=0.19.0; sys_platform != 'win32'
+
+# Google Lens wrapper (if available)
+chrome_lens_py
